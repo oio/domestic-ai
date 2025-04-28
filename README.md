@@ -19,7 +19,7 @@ The set of tools accessible via the API.
 ## How to work with this repo
 The Domestic AI repository is a container of submodules. This means it collects and references to independent repositories. You can add new submodules and update existing ones. For new submodules it's recommended to create a new repo separately, and later add it to this as a submodule.
 ### Add a new submodule
-> The standard case for adding a new submodule is adding a new tool for the Domestic AI universe. This must be done from the [Domestic Tools repo](https://github.com/oio/oio-domestic-tools). Go there and follow the instructions.
+> The standard case for adding a new submodule is adding a new tool for the Domestic AI universe. This must be done from the [Domestic Tools repo](https://github.com/oio/domestic-tools). Go there and follow the instructions.
 
 If you really want to add a new submodule here, please remember to discuss your decision with the owners of this repo. 
 Here are the steps to follow to add a new submodule:
@@ -36,12 +36,13 @@ See [the submodules documentation](https://git-scm.com/book/en/v2/Git-Tools-Subm
 
 ### Update existing submodules or pool new tools
 1. You can directly edit your changes from the submodule's folder inside the domestic-ai main repo
-1. ```
-git add .
-git commit -m '[YOUR_COMMIT_MESSAGE]'
-git push -u origin HEAD:main
-```
-1. After you pushed in the submodule's repo, you can just move to the domestic-ai main repo and ```git add .```, ```git commit -m 'edited submodule with name [NAME_OF_THE_SUBMODULE]'``` and finally ```git push```
+1. ```git add .```
+1. ```git commit -m '[YOUR_COMMIT_MESSAGE]'```
+1. ```git push -u origin HEAD:main```
+After you pushed in the submodule's repo, you can just move to the domestic-ai main repo
+1. ```git add .```
+1. ```git commit -m 'edited submodule with name [NAME_OF_THE_SUBMODULE]'``` 
+1. ```git push```
 
 ## Used Ports
 | Port Number | Usage |
