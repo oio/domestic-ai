@@ -31,6 +31,8 @@ Here are the steps to follow to add a new submodule:
 1. ```git add .```
 1. ```git commit -m 'added new submodule with name [NAME_OF_THE_SUBMODULE]'```
 1. ```git push```
+1. You might also need to recursively update in order to copy the submodule's content: ```git submodule update --init --recursive
+```
 
 See [the submodules documentation](https://git-scm.com/book/en/v2/Git-Tools-Submodules) for more information.
 

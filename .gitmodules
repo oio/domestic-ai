@@ -1,3 +1,6 @@
 [submodule "domestic-API"]
 	path = domestic-API
 	url = https://github.com/oio/domestic-API
+[submodule "domestic-tools"]
+	path = domestic-tools
+	url = https://github.com/oio/domestic-tools
