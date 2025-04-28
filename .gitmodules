@@ -4,3 +4,6 @@
 [submodule "domestic-tools"]
 	path = domestic-tools
 	url = https://github.com/oio/domestic-tools
+[submodule "domestic-bot"]
+	path = domestic-bot
+	url = https://github.com/oio/domestic-bot
