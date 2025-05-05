@@ -18,7 +18,7 @@ A Discord bot that serves as an interface for the user to access the API.
 **🧰 <a href="https://github.com/oio/domestic-tools" target="_blank">Domestic Tools</a>**
 The set of tools accessible via the API. 
 
-<img src="https://c.tenor.com/ud2ARq6upUEAAAAd/tenor.gif" width="300px"/>
+<img src="https://c.tenor.com/hMpWqkfqAwYAAAAd/tenor.gif"/>
 
 ## How to work with this repo
 The Domestic AI repository is a container of submodules. This means it collects and references to independent repositories. You can add new submodules and update existing ones. For new submodules it's recommended to create a new repo separately, and later add it to this as a submodule.
