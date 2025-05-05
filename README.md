@@ -51,6 +51,7 @@ After you pushed in the submodule's repo, you can just move to the domestic-ai m
 
 # Currently Used Ports
 Here's the list of the currently busy ports that is the ones that are used to run all the services.
+
 | Port Number | Usage |
 |------------|-------|
 | 11434 | Ollama |
