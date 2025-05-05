@@ -25,7 +25,7 @@ The Domestic AI repository is a container of submodules. This means it collects 
 ### Add a new submodule
 > The standard case for adding a new submodule is adding a new tool for the Domestic AI universe. This must be done from the [Domestic Tools repo](https://github.com/oio/domestic-tools). Go there and follow the instructions.
 
-Usually you don't need to add a submodule directly inside this root repository. You might want to do it if you want to implement a new system to interact with the API (e.g. a Telegram bot). For new tools and stuff accessible FROM the API, you can just add it to the [Domestic Tools repo](https://github.com/oio/domestic-tools).
+Usually you don't need to add a submodule directly inside this root repository. Instead, you can add it to the [Domestic Tools repo](https://github.com/oio/domestic-tools). You might want to do it if you want to implement a new system to interact with the API (e.g. a Telegram bot). For new tools and stuff accessible from the API, you can just add it to the [Domestic Tools repo](https://github.com/oio/domestic-tools).
 Here are the steps to follow to add a new submodule:
 1. Create a new repository 
 1. Document it
