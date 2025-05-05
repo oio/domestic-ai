@@ -4,6 +4,8 @@ Domestic AI is a local artificial intelligence environment crafted with 💛 by 
 ## Philosophy
 Domestic AI is a decentralised system made of small pieces of software cooperating together. It's modular and sustainable, and everybody can run it on their machine and customise it. AI is becoming a fundamental technology in many fields: we believe it should become accessible to everybody, and we want individuals to be able to build and own their own models. It's important for people to have control on the technologies they're using, not only to protect their data but also because learning how these tools work is empowering. For this reason we started to think about the concept of Domestic AI and this is the first step to make it real. We're creating an open-source project containing instructions for the usage and contribution. We hope it will be useful to anybody wishing to experiment with AI without maybe having access to the commercial models. 
 
+<div class="tenor-gif-embed" data-postid="17047231" data-share-method="host" data-aspect-ratio="1.77778" data-width="100%"><a href="https://tenor.com/view/hack-pc-guy-fawkes-hacker-gif-17047231">Hack Pc GIF</a>from <a href="https://tenor.com/search/hack-gifs">Hack GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
 ## What's Domestic AI made of 
 Domestic AI is a system of multiple independent apps running on your computer. The system is built in a semi-decentralised way so that if a piece breaks all the others aren't affected. You can call each service individually or use the Discord bot Roby or the Rest API interface, which can call all the others. Many apps generally rely on Ollama models, so you need to install it and have it running before being able to fully use the tools. By creating a tunnel from your domain to the apps, you can run your local AI from anywhere.
 
@@ -15,6 +17,8 @@ A Discord bot that serves as an interface for the user to access the API.
 
 **🧰 <a href="https://github.com/oio/domestic-tools" target="_blank">Domestic Tools</a>**
 The set of tools accessible via the API. 
+
+<div class="tenor-gif-embed" data-postid="20448886" data-share-method="host" data-aspect-ratio="1" data-width="100%"><a href="https://tenor.com/view/you-see-it-is-part-plan-explain-gif-20448886">You See It Is GIF</a>from <a href="https://tenor.com/search/you+see-gifs">You See GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
 
 ## How to work with this repo
 The Domestic AI repository is a container of submodules. This means it collects and references to independent repositories. You can add new submodules and update existing ones. For new submodules it's recommended to create a new repo separately, and later add it to this as a submodule.
