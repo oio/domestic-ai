@@ -64,7 +64,7 @@ class Startup:
 				bot_process = self.process
 				child_processes.add(self.process.pid)
 				
-				await asyncio.sleep(5)
+				await asyncio.sleep(1)
 				
 				if self.process.poll() is None:
 					logger.info(f"Bot started successfully (PID: {self.process.pid})")
@@ -106,6 +106,7 @@ class Startup:
 			logger.error(f"Failed to start {self.name}: {e}")
 			return False
 
+# Edit this to add or remove services
 services = [
 	Startup(
 		name="API", 
@@ -117,7 +118,7 @@ services = [
 	Startup(
 		name="Bot",
 		port=None,
-		endpoint="/",
+		endpoint="/", 
 		command_path=os.path.join(DOMESTIC_AI_PATH, "domestic-bot", "run-bot.command")
 	),
 	Startup(
@@ -134,7 +135,7 @@ services = [
 	)
 ]
 
-async def ensure_service_running(service: Startup, max_attempts: int = 5) -> bool:
+async def ensure_service_running(service: Startup, max_attempts: int = 1) -> bool:
 	global bot_process, child_processes
 
 	if service.name == "Bot":
@@ -156,7 +157,7 @@ async def ensure_service_running(service: Startup, max_attempts: int = 5) -> boo
 		
 		if attempt < max_attempts - 1:
 			logger.info(f"{service.name} not available (attempt {attempt+1}/{max_attempts}), waiting...")
-			await asyncio.sleep(2)
+			await asyncio.sleep(1)
 	
 	logger.info(f"{service.name} not available after {max_attempts} attempts, trying to start it")
 	
