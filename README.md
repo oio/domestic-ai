@@ -20,6 +20,28 @@ The set of tools accessible via the API.
 
 <img src="https://c.tenor.com/hMpWqkfqAwYAAAAd/tenor.gif"/>
 
+## Running Domestic AI
+### Setup
+In order to run Domestic AI, you need to setup all the services. The setup mainly consists in editing the `.env` file and the `run_[servicename].command` files. This will permit you to run the services with a single command from the terminal.
+
+1. In this folder, create a new file called `.env` with the following content: `DOMESTIC_AI_PATH = [PATH_TO_YOUR_DOMINIC_AI_FOLDER]`. This is needed to make the services find each other. If you move the Domestic AI folder, you need to update this path.
+1. Follow the instructions in the [Domestic API repo](https://github.com/oio/domestic-api) to setup it.
+1. Edit the `run_api.commnad` file so that the path to the Domestic API folder is correct.
+1. Follow the instructions in the [Domestic Bot repo](https://github.com/oio/domestic-bot) to setup it.
+1. Edit the `run_bot.command` file so that the path to the Domestic Bot folder is correct.
+1. Follow the instructions in the [Domestic Tools repo](https://github.com/oio/domestic-tools) to setup it.
+1. Edit the `run_[toolname].command` files in each folder of the Domestic Tools repo so that the path is correct.
+
+Once you have all the services set up, you are ready to run the services.
+
+### Running the services
+Make sure you followed the [Setup](#setup) section and you have all the services running. All the services are independent but they can be started and stopped with one single command from the root folder:
+```
+uv run init.py
+```
+By stopping this script, you'll stop all the services.
+When the script is running, you can access the API at `http://localhost:8000` and you'll see the bot running on Discord, after having properly set up the bot via the Discord Developer Portal (see the [Roby repo](https://github.com/oio/roby) for more information).
+
 ## How to work with this repo
 The Domestic AI repository is a container of submodules. This means it collects and references to independent repositories. You can add new submodules and update existing ones. For new submodules it's recommended to create a new repo separately, and later add it to this as a submodule.
 ### Add a new submodule
